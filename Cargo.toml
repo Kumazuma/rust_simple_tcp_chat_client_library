@@ -1,0 +1,15 @@
+[package]
+name = "tokio-client-test-2"
+version = "0.1.0"
+authors = ["Kumazuma <qweads12@gmail.com>"]
+edition = "2018"
+crate_type = "cdylib"
+#[crate_type = "cdylib"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+[dependencies]
+tokio = {version="1", features=["full"]}
+tokio-util = {version="0.6.0", features=["codec"]}
+bytes = "1.0.0"
+tokio-stream = "0.1.0"
